@@ -72,6 +72,16 @@ Install dependencies
 composer install
 ```
 
+### Testing
+
+```
+cd backend
+```
+
+```
+./vendor/bin/phpunit
+```
+
 ### Common folders
 
 Controllers
