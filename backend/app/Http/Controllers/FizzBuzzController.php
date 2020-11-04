@@ -10,7 +10,7 @@ class FizzBuzzController extends Controller
 
     public function get(Request $request) {
         $this->validate($request, [
-            'number' => 'required|numeric|between:1,100'
+            'number' => 'required|integer|between:1,100'
         ]);
 
         $number = $request->input('number');

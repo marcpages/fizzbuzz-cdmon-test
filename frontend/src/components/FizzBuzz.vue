@@ -1,7 +1,7 @@
 <template>
   <div class="fizz-buzz-container">
     <div class="input-container">
-      <input v-model="number" placeholder="Input a number" type="text" />
+      <input v-model="number" @keyup.enter="getOutput" placeholder="Input a number" type="text" />
       <button @click="getOutput" :disabled="isLoading">Calculate</button>
     </div>
     <div class="result-container">
